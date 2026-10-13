@@ -1,3 +1,5 @@
+# Codigo de prueba
+
 monto_total_diario = 0.0
 open_caja = True
 
