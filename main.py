@@ -6,18 +6,18 @@ while open_caja:
     print("1. Registrar ventas. ")
     print("2. Ver total acumulado del día. ")
     print("3. Cerrar caja y salir. ")
-    opcion = int(input("Elija una opcion: "))
+    opcion = input("Elija una opcion: ")
 
-    if opcion < 1 or opcion > 3:
+    if opcion < "1" or opcion > "3":
         print("Error, por favor ingrese un opcion valida.")
         input("Presiona Enter para volver a intentar.")
 
-    if opcion == 3:
+    if opcion == "3":
         print("Gracias por utilizar nuestros servicios. Venta cerrada.")
         print("Su monto total diario acumulado es:", monto_total_diario)
         open_caja = False
 
-    if opcion == 1:
+    if opcion == "1":
         print("Registro del cliente")
         subtotal_cliente = 0
         registro_venta = True
@@ -77,6 +77,6 @@ while open_caja:
             else:
                 print("Venta habitual.")
 
-    if opcion == 2:
+    if opcion == "2":
         print("Su monto total diario acumulado es:", monto_total_diario)
         input("Presione intro para continuar.")
